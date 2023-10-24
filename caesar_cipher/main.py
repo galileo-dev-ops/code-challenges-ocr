@@ -45,7 +45,7 @@ def encrypt_clicked():
                                     minvalue=1,
                                     maxvalue=26)
     if shift is None:
-            return
+        return
     warning_encrypt = simpledialog.askstring(
         "Warning", "Are you sure you want to encrypt? Loss of the key will result in a lost message! Enter the word CONFIRM to continue. ")
     if warning_encrypt is not None and warning_encrypt.lower() == 'confirm':
@@ -65,6 +65,10 @@ def encrypt_clicked():
 
 def decrypt_clicked():
     text = msg_entry.get()
+    if text.lower() == "fetch":
+        with open("encrypted_msg.txt", "r") as save_file:
+            text=save_file.read()
+            save_file.close()
     shift = simpledialog.askinteger("Key",
                                     "Enter the key: ")
     if shift is not None and shift > 0 and shift < 26:
@@ -83,11 +87,13 @@ def decrypt_clicked():
             with open("brute_force.txt", "w") as save_file:
                 for i in range(0,26):
                     output = caesar_cipher(text, -i)
-                    save_file.write("Key: " + str(i) + " | Output: " + output + '\n')
                     split_out = output.split()
                     for word in split_out:
                         if word.lower() in dictionary:
                             messagebox.showinfo(title="Word found in dictionary", message="The message contents have been found in a dictionary with key " + str(i) + ". See txt file.")
+                            save_file.write("-----> Key: " + str(i) + " | Output: " + output + '\n')
+                        else:
+                            save_file.write("Key: " + str(i) + " | Output: " + output + '\n')
             save_file.close()
             messagebox.showwarning(title="Result", message="Brute force complete. The output has been saved as brute_force.txt")
         else:
@@ -98,7 +104,7 @@ root = tk.Tk()
 custom_font = font.Font(family="Ubuntu", size=16)
 
 root.title('CCE/D')
-root.geometry('400x110')
+root.geometry('1000x300')
 program_title = tk.Label(text='Caesar Cipher Encrypter/Decrypter',
                          font=custom_font)
 msg_entry = tk.Entry()
