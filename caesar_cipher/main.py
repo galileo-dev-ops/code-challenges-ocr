@@ -44,6 +44,8 @@ def encrypt_clicked():
                                     "Enter the key you wish to use: ",
                                     minvalue=1,
                                     maxvalue=26)
+    if shift is None:
+            return
     warning_encrypt = simpledialog.askstring(
         "Warning", "Are you sure you want to encrypt? Loss of the key will result in a lost message! Enter the word CONFIRM to continue. ")
     if warning_encrypt is not None and warning_encrypt.lower() == 'confirm':
