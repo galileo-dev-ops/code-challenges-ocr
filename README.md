@@ -31,14 +31,9 @@ The information contained on the Service is for general information purposes onl
 
 The Company assumes no responsibility for errors or omissions in the contents of the Service.
 
-In no event shall the Company be liable for any special, direct, indirect, consequential, or incidental damages or any damages whatsoever, whether in an action of contract, negligence or other tort, arising out of or in connection with the use of the Service or the contents of the Service. The Company reserves the right to make additions, deletions, or modifications to the contents on the Service at any time without prior notice. This Disclaimer has been created with the help of the [Disclaimer Generator](https://www.termsfeed.com/disclaimer-generator/).
+In no event shall the Company be liable for any special, direct, indirect, consequential, or incidental damages or any damages whatsoever, whether in an action of contract, negligence or other tort, arising out of or in connection with the use of the Service or the contents of the Service. The Company reserves the right to make additions, deletions, or modifications to the contents on the Service at any time without prior notice.
 
 The Company does not warrant that the Service is free of viruses or other harmful components.
-
-
-
-
-
 
 
 ### External Links Disclaimer
@@ -46,9 +41,6 @@ The Company does not warrant that the Service is free of viruses or other harmfu
 The Service may contain links to external websites that are not provided or maintained by or in any way affiliated with the Company.
 
 Please note that the Company does not guarantee the accuracy, relevance, timeliness, or completeness of any information on these external websites.
-
-
-
 
 
 ### Errors and Omissions Disclaimer
