@@ -1,12 +1,14 @@
 # OCR Code Challenges
 This is a repository of all code challenges recommended by OCR.
-Below are the descriptions of each program:
-# Descriptions
-## Caesar Cipher
 
-*** DISCLAIMER ***
+
+# DISCLAIMER
 
 Last updated: October 26, 2023
+
+__By clicking the link below you agree to the Terms and Conditions as set out in this disclaimer__
+
+[Click to skip](#caesar-cipher)
 
 ### Interpretation and Definitions
 
@@ -77,6 +79,7 @@ The Company will not be liable to You or anyone else for any decision made or ac
 
 ---
 ---
+## Caesar Cipher
 
 ### Summary
 
