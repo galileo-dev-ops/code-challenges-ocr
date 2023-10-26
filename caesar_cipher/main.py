@@ -15,7 +15,6 @@ import tkinter as tk
 from tkinter import font
 from tkinter import messagebox
 from tkinter import simpledialog
-import sys
 
 with open("words.txt", "r") as file:
         dictionary = set(word.strip() for word in file)
@@ -40,6 +39,9 @@ def add(event=None):
 
 def encrypt_clicked():
     text = msg_entry.get()
+    if text == '':
+        messagebox.showwarning(title="Error", message="No message entered!")
+        return
     shift = simpledialog.askinteger("Key",
                                     "Enter the key you wish to use: ",
                                     minvalue=1,
@@ -65,6 +67,9 @@ def encrypt_clicked():
 
 def decrypt_clicked():
     text = msg_entry.get()
+    if text == '':
+        messagebox.showwarning(title="Error", message="No message entered!")
+        return
     if text.lower() == "fetch":
         with open("encrypted_msg.txt", "r") as save_file:
             text=save_file.read()
