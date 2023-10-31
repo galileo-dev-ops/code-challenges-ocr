@@ -6,7 +6,7 @@ This is a repository of all code challenges recommended by OCR.
 
 Last updated: October 26, 2023
 
-__By clicking the link below you agree to the Terms and Conditions as set out in this disclaimer__
+__By clicking the link below you agree to the Terms and Conditions as set out in this disclaimer.__
 
 [Click to skip](#caesar-cipher)
 
