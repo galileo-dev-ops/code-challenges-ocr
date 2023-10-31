@@ -89,7 +89,7 @@ The Caesar Cipher program implements the following features:
  - User choice of phrase and key
  - Robust design to minimalise errors and improve user experience
  - Brute-force attack system with a dictionary lookup feature for possible matches
- - Saving of encryption and decryption results in a text file
+ - Saving of encryption and decryption results in a text file, including previous messages.
 
 ### Requirements and Running
 
@@ -121,9 +121,21 @@ A GUI window will open upon running. There are 3 main elements to the GUI - the 
  - Press the "Encrypt" button
  - A pop-up window will appear, enter the key you wish to use.
  - Confirm the encryption by typing "Confirm" (not case-sensitive). Any other character will abort the encryption
- - A message will appear saying the encryption was successful
+ - A message will appear stating the encrypted message, after which a popup to save the encrypted message appears.
 
 #### To decrypt:
+ - Enter the message you wish to decrypt into the text box
+ - Press the decrypt button
+ - A pop-up window will appear, enter the key used on the message.
+ - A message will appear stating the decrypted message, after which a popup to save the decrypted message appears.
+
+#### To brute-force:
+ - Enter the message you wish to decrypt into the text box
+ - Press the decrypt button
+ - A pop-up window will appear prompting for the key used. Enter either zero or any value outside the range of 1 ≤ n ≤ 26.
+ - Another pop-up window will appear to confirm the bruteforce. Type "Confirm" (not case-sensitive) to proceed. Any other character will abort the attack.
+ - The brute-force will then take place. Based on the arrangement of letters, various popups will appear as to possible keys. These will also be highlighted in the saved text file with an arrow. eg. ----> Key 1: Test.
+ - The brute_force.txt file is saved and a pop-up confirming its success will appear.
 
 ### About the caesar_cipher function
 
